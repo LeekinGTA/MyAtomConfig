@@ -1,0 +1,155 @@
+"*":
+  welcome:
+    showOnStartup: false
+  core:
+    packagesWithKeymapsDisabled: [
+      "tree-view-finder"
+      "tool-bar"
+      "python-yapf"
+      "atom-ternjs"
+      "url-encode"
+      "git-control"
+      "git-plus"
+      "jsonlint"
+      "build-tools"
+      "glsl-preview"
+      "video-player"
+    ]
+    followSymlinks: false
+    themes: [
+      "one-dark-ui"
+      "chester-atom-syntax"
+    ]
+  editor:
+    invisibles: {}
+    scrollPastEnd: true
+    tabLength: 4
+    fontFamily: "YaHei Consolas Hybrid"
+    showIndentGuide: true
+    softWrap: true
+    fontSize: 27
+  minimap: {}
+  "build-tools": {}
+  "linter-clang":
+    clangDefaultCppFlags: "-std=c++11"
+  "autocomplete-clang":
+    clangCommand: "clang++"
+    includePaths: [
+      "."
+    ]
+  "autocomplete-plus":
+    autoActivationDelay: 500
+  "file-icons": {}
+  "linter-gcc":
+    gccErrorLimit: 15
+    gccIncludePaths: "."
+    gccSuppressWarnings: true
+  "linter-lua": {}
+  "tool-bar":
+    position: "Left"
+  "flex-tool-bar":
+    showConfigButton: false
+    useBrowserPlusWhenItIsActive: true
+  "tree-view-finder": {}
+  "browser-plus": {}
+  "terminal-plus":
+    core:
+      workingDirectory: "Active File"
+    style:
+      fontFamily: "YaHei Consolas Hybrid"
+      fontSize: "20"
+    toggles:
+      autoClose: true
+  "tree-view":
+    hideVcsIgnoredFiles: false
+  linter:
+    showErrorTabLine: true
+    errorPanelHeight: 84
+    displayLinterInfo: true
+    showErrorPanel: false
+  react:
+    enabledForAllJavascriptFiles: true
+  "terminal-panel": {}
+  "atom-beautify":
+    _analyticsUserId: "eb357ca2-9e88-4bff-b807-ed6009c312ba"
+  "autocomplete-python":
+    useSnippets: "required"
+  "exception-reporting":
+    userId: "4bec4974-5cbb-0e8f-74f5-434772af33b4"
+  "linter-python-pep257": {}
+  "python-tools":
+    smartBlockSelection: false
+    pythonPath: "/usr/bin/python"
+  "python-isort": {}
+  "python-yapf":
+    yapfPath: "/usr/local/bin/yapf"
+  "python-iresolve": {}
+  _dartlang:
+    _errorsInitialized: true
+    _initialized: true
+    _initializedSymLinks: true
+    _version: "0.4.13"
+  dartlang:
+    sdkLocation: "/usr/lib/dart"
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  nuclide:
+    remoteProjectsConfig: []
+  "linter-jsxhint": {}
+  jshint:
+    supportLintingJsx: true
+  "color-picker":
+    preferredFormat: "HEX"
+  pigments:
+    groupPaletteColors: "by file"
+  "linter-eslint":
+    disableEslintIgnore: true
+  "markdown-preview": {}
+  emmet: {}
+  "language-babel": {}
+  fonts: {}
+  "atom-ternjs":
+    useSnippets: true
+  "one-dark-ui":
+    fontSize: 16
+    layoutMode: "Compact"
+  "git-plus": {}
+  "atom-material-ui":
+    fonts: {}
+    ui:
+      panelContrast: true
+    tabs: {}
+    colors: {}
+    treeView:
+      compactList: true
+  "accents-ui":
+    accentColor:
+      red: 36
+      green: 97
+      blue: 111
+      alpha: 1
+  "dark-flat-ui":
+    accentColor: "blue"
+  "atom-json-editor": {}
+  "paper-flat-ui": {}
+  jsonlint:
+    validateOnChange: true
+    hideOnNoErrors: true
+  "daylight-ui":
+    layoutMode: "Spacious"
+  "linter-flake8": {}
+  "linter-shellcheck": {}
+  "linter-checkbashisms": {}
+  "glsl-preview": {}
+  "linter-glsl":
+    glslangValidatorPath: "/home/geequlim/Application/DevelopTools/glslangValidator"
+  "video-player": {}
+  "atom-twitter-client": {}
+  "symbols-tree-view":
+    autoToggle: true
+  "imdone-atom":
+    openIn: {}
+    todaysJournal: {}
+".python.source":
+  editor:
+    autoIndentOnPaste: true

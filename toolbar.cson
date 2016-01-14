@@ -1,0 +1,77 @@
+[
+        {
+          type: "button"
+          iconset: "fi"
+          icon: "page-add"
+          callback: "application:new-file"
+          tooltip: "New File"
+        }
+        {
+            type: "spacer"
+        }
+        {
+          type: "button"
+          iconset: "ion"
+          icon: "document"
+          callback: "application:open-file"
+          tooltip: "Open File"
+        }
+        {
+          type: "button"
+          iconset: "ion"
+          icon: "folder"
+          callback: "application:add-project-folder"
+          tooltip: "Open Folder"
+        }
+        {
+          type: "button"
+          iconset: "fa"
+          icon: "terminal"
+          callback: "terminal-plus:toggle"
+          tooltip: "Show Terminal"
+        }
+        {
+            type: "spacer"
+        }
+        {
+          type: "button"
+          iconset: "fi"
+          icon: "indent-more"
+          callback: "tree-view:toggle"
+          tooltip: "Show Tree View"
+        }
+      {
+        type: "button"
+        iconset: "fa"
+        icon: "sliders"
+        callback: "settings-view:open"
+        tooltip: "Settings"
+      }
+      {
+        type: "button"
+        icon: "markdown"
+        callback: "markdown-preview:toggle"
+        hide: "!Markdown"
+      }
+      {
+        type: "button"
+        iconset: "ion"
+        icon: "arrow-expand"
+        callback: "window:toggle-full-screen"
+        tooltip: "Toggle Fullscreen"
+      }
+      {
+        type: "button"
+        iconset: "ion"
+        icon: "ios-refresh"
+        callback: "window:reload"
+        tooltip: "Reload Window"
+      }
+      {
+        type: "button"
+        iconset: "ion"
+        icon: "android-cancel"
+        callback: "application:quit"
+        tooltip: "Quit"
+      }
+]

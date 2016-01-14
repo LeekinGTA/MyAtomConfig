@@ -1,0 +1,184 @@
+# --------------------------------------------- C++ ------------------------------------------
+'.source.cpp':
+    'C++: Create Class':
+        'prefix': 'clas'
+        'body': """
+        #ifndef __${1:name_t}_H__
+        #define __${1:name_t}_H__
+
+        class ${1:name_t} : public  ${2:BaseClass}
+        {
+        private:
+            typedef ${2:BaseClass} super;
+        public:
+            ${1:name_t} (${3:arguments});
+            virtual ~${1:name_t} ();
+
+        };
+
+        #endif // __${1:name_t}_H__
+        """
+
+# ------------------------------------ Markdown ------------------------------------------
+'.source.gfm':
+    'Blog Header':
+        'prefix': 'blog'
+        'body': """
+        ---
+        layout: post
+        title: ${1:Title}
+        category: ${2:技术}
+        tags: ${3:技术 其他}
+        previousTitle: '$4'
+        previousUrl: '$5'
+        nextTitle: '$6'
+        nextUrl: '$7'
+        description:$8
+        ---
+        """
+
+    'Colored box':
+        'prefix': 'box'
+        'body': """
+        <div class="${1:green}_box">
+        	<p class="${1:green}_title">${2:提示}</p>
+        	<div class="box_content">
+                $3
+            </div>
+        </div>
+        """
+
+    'Code Highlight':
+        'prefix': 'code'
+        'body': """
+        {% highlight ${1:c++} %}
+        $2
+        {% endhighlight %}
+        """
+
+# --------------------------------------------- JS ------------------------------------------
+'.source.js':
+    'use strict':
+        'prefix': 'us'
+        'body': "'use strict';"
+# --------------------------------------------- JSX ------------------------------------------
+'.source.jsx':
+    'React Native: Create StyleSheet':
+        'prefix': 'rnss'
+        'body': """
+        let ${1:styles} = StyleSheet.create({
+            ${2:container} : {
+                $3
+            },
+        });
+        """
+
+    'Create React Native component':
+        'prefix': 'rncc'
+        'body': """
+        class ${1} extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {$2};
+            }
+
+            render() {
+                return (
+                    <${3:View}></${3:View}>
+                );
+            }
+        }
+        """
+
+    'React Native component as a module':
+        'prefix': 'rnccx'
+        'body': """
+        'use strict';
+        import React from 'react-native';
+        let {${0:StyleSheet, View}} = React;
+
+        class ${1} extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {$2};
+            }
+
+            render() {
+                return (
+                    <${3:View}></${3:View}>
+                );
+            }
+        }
+
+        module.exports = ${1};
+        """
+
+    'React Native: Common tags':
+        'prefix': 'tag'
+        'body': '<${1:View} style={${2}} ></${1:View}>'
+
+    'React Native: Button':
+        'prefix': 'btn'
+        'body': """
+        <${1:TouchableOpacity} style={${2}} onPress={$3} >
+            $4
+        </${1:TouchableOpacity}>
+        """
+
+    'Import react-native module':
+        'prefix': 'imrn'
+        'body': """
+        import React from 'react-native';
+        let { ${1:StyleSheet, View}} = React;
+        """
+
+    'Image':
+        'prefix': 'img'
+        'body': """
+        <Image style={$1} source={$2}></Image>
+        """
+    'View':
+        'prefix': 'vie'
+        'body': """
+        <View style={$1}>
+            $2
+        </View>
+        """
+
+    'ListView DataSource':
+        'prefix': 'ds'
+        'body': """
+        this.ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+        """
+    'ListView':
+        'prefix': 'listv'
+        'body': '''
+        <ListView
+            style={$1}
+            dataSource={${2:this.ds.cloneWithRows($3)}}
+            renderRow={$4}
+            onScroll={$5}
+            renderFooter={$6}
+        />
+        '''
+    'Vector Icon':
+        'prefix': 'icon'
+        'body': '''
+        <Icon
+            style={${0:{}}}
+            name='$1'
+            size={${2:20}}
+            color={${3:'white'}}
+        />
+        '''
+    'TextInput':
+        'prefix': 'input'
+        'body': '''
+        <TextInput
+            style={${0:{}}}
+            autoCapitalize='${2:sentences}'
+            multiline={${3:false}}
+            placeholder="$4"
+            onChangeText={${5:(text) => this.setState({text})}}
+        />
+        '''
