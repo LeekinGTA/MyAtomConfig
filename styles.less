@@ -17,7 +17,8 @@
 
 // style the background color of the tree view
 .tree-view {
-  // background-color: whitesmoke;
+  background-color: #494f54;
+  font-size: 1.2em;
 }
 
 // style the background and foreground colors on the atom-text-editor-element itself
@@ -29,4 +30,64 @@ atom-text-editor {
 // To style other content in the text editor's shadow DOM, use the ::shadow expression
 atom-text-editor::shadow .cursor {
   // border-color: red;
+}
+.terminal-view .standard {
+    background-color: #3a3c40;
+    color: #eeeeee;
+}
+.tool-panel {
+    background-color: #45464a;
+}
+atom-panel.top, atom-panel.bottom, atom-panel.left, atom-panel.right {
+    background-color: #d2dae0;
+}
+
+body {
+    font-size: 1.2em;
+}
+.tab-bar {
+    background: #d2dae0;
+}
+.tab-bar .tab::after {
+    background-color: #f5fbff;
+}
+.tab-bar .tab[data-type="TextEditor"]::after {
+    background-color: #f5fbff;
+    border-bottom-color: #d45f2e;
+    border-bottom-width: 2px;
+}
+.tab-bar .tab:first-of-type::after {
+    background-color: #f5fbff;
+    border-bottom-color: #d45f2e;
+    border-bottom-width: 2px;
+}
+
+.settings-view .config-menu {
+    background: #ececec;
+}
+
+.settings-view .section {
+    background: #cccccc
+}
+.settings-view .icon::before {
+    color: #524d4d;
+}
+
+atom-pane-container atom-pane .item-views {
+    background-color: #cccccc;
+}
+linter-bottom-tab {
+    color:#626262;
+}
+linter-bottom-tab.active {
+    color: #d5e4d4;
+    background: #4495d7;
+}
+atom-panel.modal:before {
+    background-color: #d0d9d6;
+}
+atom-panel.modal .select-list ol.list-group li, atom-panel.modal.select-list ol.list-group li {
+    background-color:#b5bac4;
+    border-bottom: 1px solid #797979;
+    color: #525252;
 }

@@ -16,27 +16,26 @@
       "video-player"
     ]
     followSymlinks: false
+    disabledPackages: [
+      "atom-react-native-css"
+    ]
     themes: [
-      "one-dark-ui"
-      "chester-atom-syntax"
+      "daylight-ui"
+      "gl-light-syntax"
     ]
   editor:
     invisibles: {}
     scrollPastEnd: true
-    tabLength: 4
-    fontFamily: "YaHei Consolas Hybrid"
+    fontFamily: "Consolas"
     showIndentGuide: true
     softWrap: true
-    fontSize: 27
+    fontSize: 26
   minimap: {}
   "build-tools": {}
   "linter-clang":
     clangDefaultCppFlags: "-std=c++11"
   "autocomplete-clang":
-    clangCommand: "clang++"
-    includePaths: [
-      "."
-    ]
+    clangCommand: "clang++-3.7"
   "autocomplete-plus":
     autoActivationDelay: 500
   "file-icons": {}
@@ -56,7 +55,7 @@
     core:
       workingDirectory: "Active File"
     style:
-      fontFamily: "YaHei Consolas Hybrid"
+      fontFamily: "Monospace"
       fontSize: "20"
     toggles:
       autoClose: true
@@ -66,7 +65,6 @@
     showErrorTabLine: true
     errorPanelHeight: 84
     displayLinterInfo: true
-    showErrorPanel: false
   react:
     enabledForAllJavascriptFiles: true
   "terminal-panel": {}
@@ -136,7 +134,7 @@
     validateOnChange: true
     hideOnNoErrors: true
   "daylight-ui":
-    layoutMode: "Spacious"
+    layoutMode: "Compact"
   "linter-flake8": {}
   "linter-shellcheck": {}
   "linter-checkbashisms": {}
@@ -147,9 +145,38 @@
   "atom-twitter-client": {}
   "symbols-tree-view":
     autoToggle: true
+    zAutoHideTypes: "variable"
+    autoHide: true
   "imdone-atom":
     openIn: {}
     todaysJournal: {}
+  "switch-header-source":
+    samePane: true
+  docblockr:
+    extra_tags: [
+      "@brief"
+    ]
+    per_section_indent: true
+  "xml-formatter":
+    endLineCharacter: "LF (\\n)"
+    numberCharIndent: 4
+  "api-docs":
+    cpp: true
+    less: true
+    c: true
+    node: true
+    npm: true
+    python2: true
+    react: true
+    react_native: true
+    sass: true
+    html: false
+    http: false
+  script:
+    stopOnRerun: true
+  "one-light-ui":
+    layoutMode: "Compact"
+    fontSize: 16
 ".python.source":
   editor:
     autoIndentOnPaste: true

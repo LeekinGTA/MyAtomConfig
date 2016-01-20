@@ -1,0 +1,10 @@
+storage
+compile-cache
+dev
+.npm
+.node-gyp
+packages/*
+git-time-machine
+blob-store
+.apm
+nohup.out
