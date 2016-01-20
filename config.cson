@@ -14,6 +14,7 @@
       "build-tools"
       "glsl-preview"
       "video-player"
+      "save-autorun"
     ]
     followSymlinks: false
     disabledPackages: [
@@ -29,7 +30,7 @@
     fontFamily: "Consolas"
     showIndentGuide: true
     softWrap: true
-    fontSize: 26
+    fontSize: 25
   minimap: {}
   "build-tools": {}
   "linter-clang":
@@ -177,6 +178,8 @@
   "one-light-ui":
     layoutMode: "Compact"
     fontSize: 16
+  "save-autorun":
+    timeout: 50
 ".python.source":
   editor:
     autoIndentOnPaste: true

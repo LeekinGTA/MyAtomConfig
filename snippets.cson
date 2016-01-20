@@ -61,7 +61,7 @@
     'use strict':
         'prefix': 'us'
         'body': "'use strict';"
-# --------------------------------------------- JSX ------------------------------------------
+# ---------------- JSX --------------------
 '.source.jsx':
     'React Native: Create StyleSheet':
         'prefix': 'rnss'
@@ -73,41 +73,61 @@
         });
         """
 
-    'Create React Native component':
-        'prefix': 'rncc'
+    'Create react component':
+        'prefix': 'rcc'
         'body': """
         class ${1} extends React.Component {
-            constructor(props) {
-                super(props);
-                this.state = {$2};
-            }
+          constructor(props) {
+            super(props);
+            this.state = {$2};
+          }
 
-            render() {
-                return (
-                    <${3:View}></${3:View}>
-                );
-            }
+          render() {
+            return (
+                <${3:div}>$4</${3:div}>
+            );
+          }
         }
         """
 
     'React Native component as a module':
         'prefix': 'rnccx'
         'body': """
-        'use strict';
         import React from 'react-native';
         let {${0:StyleSheet, View}} = React;
 
         class ${1} extends React.Component {
-            constructor(props) {
-                super(props);
-                this.state = {$2};
-            }
+          constructor(props) {
+            super(props);
+            this.state = {$2};
+          }
 
-            render() {
-                return (
-                    <${3:View}></${3:View}>
-                );
-            }
+          render() {
+            return (
+                <${3:View}>$4</${3:View}>
+            );
+          }
+        }
+
+        module.exports = ${1};
+        """
+
+    'React component as a module':
+        'prefix': 'rccx'
+        'body': """
+        import React from 'react';
+
+        class ${1} extends React.Component {
+          constructor(props) {
+            super(props);
+            this.state = {$2};
+          }
+
+          render() {
+            return (
+              <${3:div}>$4</${3:div}>
+            );
+          }
         }
 
         module.exports = ${1};
@@ -121,7 +141,7 @@
         'prefix': 'btn'
         'body': """
         <${1:TouchableOpacity} style={${2}} onPress={$3} >
-            $4
+          $4
         </${1:TouchableOpacity}>
         """
 
@@ -141,7 +161,7 @@
         'prefix': 'vie'
         'body': """
         <View style={$1}>
-            $2
+          $2
         </View>
         """
 
@@ -154,31 +174,31 @@
         'prefix': 'listv'
         'body': '''
         <ListView
-            style={$1}
-            dataSource={${2:this.ds.cloneWithRows($3)}}
-            renderRow={$4}
-            onScroll={$5}
-            renderFooter={$6}
+          style={$1}
+          dataSource={${2:this.ds.cloneWithRows($3)}}
+          renderRow={$4}
+          onScroll={$5}
+          renderFooter={$6}
         />
         '''
     'Vector Icon':
         'prefix': 'icon'
         'body': '''
         <Icon
-            style={${0:{}}}
-            name='$1'
-            size={${2:20}}
-            color={${3:'white'}}
+          style={${0:{}}}
+          name='$1'
+          size={${2:20}}
+          color={${3:'white'}}
         />
         '''
     'TextInput':
         'prefix': 'input'
         'body': '''
         <TextInput
-            style={${0:{}}}
-            autoCapitalize='${2:sentences}'
-            multiline={${3:false}}
-            placeholder="$4"
-            onChangeText={${5:(text) => this.setState({text})}}
+          style={${0:{}}}
+          autoCapitalize='${2:sentences}'
+          multiline={${3:false}}
+          placeholder="$4"
+          onChangeText={${5:(text) => this.setState({text})}}
         />
         '''
