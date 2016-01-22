@@ -36,10 +36,6 @@ atom-text-editor::shadow .cursor {
     color: #eeeeee;
 }
 
-atom-panel.top, atom-panel.bottom, atom-panel.left, atom-panel.right {
-    background-color: #d2dae0;
-}
-
 body {
     font-size: 1.2em;
 }
@@ -81,6 +77,11 @@ linter-bottom-tab.active {
     color: #d5e4d4;
     background: #4495d7;
 }
+
+atom-panel {
+  color: #e4e4e4;
+}
+
 atom-panel.modal:before {
     background-color: #d0d9d6;
 }
@@ -88,6 +89,10 @@ atom-panel.modal .select-list ol.list-group li, atom-panel.modal.select-list ol.
     background-color:#b5bac4;
     border-bottom: 1px solid #797979;
     color: #525252;
+}
+
+atom-panel.top, atom-panel.bottom, atom-panel.left, atom-panel.right {
+    background-color: #d2dae0;
 }
 
 autocomplete-suggestion-list.select-list.popover-list .suggestion-description {
@@ -123,7 +128,14 @@ autocomplete-suggestion-list.select-list.popover-list .suggestion-list-scroller 
 .git-control .dialog .heading strong {
     color: #5c5c5c;
 }
+.git-control .branches > .branch.active .icon.chevron-right {
+    color: #1bd777;
+}
 
 .symbols-context-menu .select-list.popover-list {
     background: #787f81;
+}
+
+.status-bar {
+    color: #4d5351;
 }
