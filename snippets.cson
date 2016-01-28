@@ -55,13 +55,16 @@
         $2
         {% endhighlight %}
         """
+    'End description':
+      'prefix': 'more'
+      'body': '<!-- more -->'
+
 # ------------------------- yaml ------------------------------------
 '.source.yaml':
   'New Post':
     'prefix': 'post'
     'body': '''
     - title: ${1:Title}
-      subtitle: $2
       publishAt: ${3:${4:2016}-${5:01}-${6:01} ${7:12}:${8:00}:${9:00}}
       file: ${10:posts/${11:filename}.md}
       categories:
