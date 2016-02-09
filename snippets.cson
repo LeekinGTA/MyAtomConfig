@@ -1,52 +1,54 @@
 # --------------------------------------------- C++ ------------------------------------------
 '.source.cpp':
     'C++: Create Class':
-        'prefix': 'clas'
-        'body': """
-        #ifndef __${1:name_t}_H__
-        #define __${1:name_t}_H__
+      'prefix': 'classh'
+      'body': """
+      #ifndef __${1:name_t}_H__
+      #define __${1:name_t}_H__
 
-        class ${1:name_t} : public  ${2:BaseClass}
-        {
-        private:
-            typedef ${2:BaseClass} super;
-        public:
-            ${1:name_t} (${3:arguments});
-            virtual ~${1:name_t} ();
-
-        };
-
-        #endif // __${1:name_t}_H__
-        """
-
+      class ${1:name_t} ${2:: public  ${3:BaseClass}}
+      {
+      private:
+          typedef ${3:BaseClass} super;
+      public:
+          ${1:name_t} (${5:arguments});
+          virtual ~${1:name_t} ();
+      };
+      #endif // __${1:name_t}_H__
+      """
+    'Create Class':
+      'prefix': 'class'
+      'body': '''
+      class ${1:name_t} ${2:: public  ${3:BaseClass}}
+      {
+      private:
+          typedef ${3:BaseClass} super;
+      public:
+          ${1:name_t} (${5:arguments});
+          virtual ~${1:name_t} ();
+      };
+      '''
 # ------------------------------------ Markdown ------------------------------------------
 '.source.gfm':
-    'Blog Header':
-        'prefix': 'blog'
-        'body': """
-        ---
-        layout: post
-        title: ${1:Title}
-        category: ${2:技术}
-        tags: ${3:技术 其他}
-        previousTitle: '$4'
-        previousUrl: '$5'
-        nextTitle: '$6'
-        nextUrl: '$7'
-        description:$8
-        ---
-        """
-
-    'Colored box':
-        'prefix': 'box'
-        'body': """
-        <div class="${1:green}_box">
-        	<p class="${1:green}_title">${2:提示}</p>
-        	<div class="box_content">
-                $3
-            </div>
-        </div>
-        """
+    'Styled block':
+      'prefix': 'class'
+      'body': '''
+      <!-- class="$1" -->
+      $2
+      <!-- endclass -->
+      '''
+    'Bootstrap panel':
+      'prefix': 'panel'
+      'body': '''
+      <!-- class="panel panel-${1:default}" -->
+      <!-- class="panel-heading" -->
+      ${2:##### }
+      <!-- endclass -->
+      <!-- class="panel-body" -->
+      $3
+      <!-- endclass -->
+      <!-- endclass -->
+      '''
 
     'Code Highlight':
         'prefix': 'code'
@@ -77,6 +79,9 @@
     'use strict':
         'prefix': 'us'
         'body': "'use strict';"
+    'Import module':
+      'prefix': 'im'
+      'body': "import $1 from '$2'"
 # ---------------- JSX --------------------
 '.source.jsx':
     'React Native: Create StyleSheet':
