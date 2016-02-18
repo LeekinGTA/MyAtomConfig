@@ -85,7 +85,7 @@
     per_section_indent: true
   editor:
     fontFamily: "Consolas"
-    fontSize: 23
+    fontSize: 25
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -139,7 +139,7 @@
     fontSize: 16
     layoutMode: "Compact"
   "one-light-ui":
-    fontSize: 16
+    fontSize: 14
     layoutMode: "Compact"
   "paper-flat-ui": {}
   pigments:
@@ -165,8 +165,7 @@
     zAutoHideTypes: "variable"
   "terminal-panel": {}
   "terminal-plus":
-    core:
-      workingDirectory: "Active File"
+    core: {}
     style:
       fontFamily: "Monospace"
       fontSize: "20"

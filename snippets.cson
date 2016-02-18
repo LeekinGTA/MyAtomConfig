@@ -42,11 +42,33 @@
       'body': '''
       <!-- class="panel panel-${1:default}" -->
       <!-- class="panel-heading" -->
+      <!-- class="panel-title" -->
       ${2:##### }
+      <!-- endclass -->
       <!-- endclass -->
       <!-- class="panel-body" -->
       $3
       <!-- endclass -->
+      <!-- endclass -->
+      '''
+    'Bootstrap List':
+      'prefix': 'list'
+      'body': '''
+      <!-- class="list-group" -->
+      <!-- class="list-group-item active" -->
+      $1
+      <!-- endclass -->
+      <!-- class="list-group-item" -->
+      $2
+      <!-- endclass -->
+      <!-- endclass -->
+      '''
+
+    'Bootstrap List item':
+      'prefix': 'listi'
+      'body': '''
+      <!-- class="list-group-item" -->
+      $1
       <!-- endclass -->
       '''
 
@@ -60,6 +82,7 @@
     'End description':
       'prefix': 'more'
       'body': '<!-- more -->'
+
 
 # ------------------------- yaml ------------------------------------
 '.source.yaml':
