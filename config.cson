@@ -69,7 +69,7 @@
       "save-autorun"
     ]
     themes: [
-      "daylight-ui"
+      "one-light-ui"
       "gl-light-syntax"
     ]
   "dark-flat-ui":
@@ -85,7 +85,7 @@
     per_section_indent: true
   editor:
     fontFamily: "Consolas"
-    fontSize: 25
+    fontSize: 21
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -136,10 +136,10 @@
   nuclide:
     remoteProjectsConfig: []
   "one-dark-ui":
-    fontSize: 16
+    fontSize: 18
     layoutMode: "Compact"
   "one-light-ui":
-    fontSize: 14
+    fontSize: 16
     layoutMode: "Compact"
   "paper-flat-ui": {}
   pigments:

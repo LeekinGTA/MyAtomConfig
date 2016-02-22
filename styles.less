@@ -1,150 +1,150 @@
-/*
- * Your Stylesheet
- *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically
- * when it is changed and saved.
- *
- * Add your own CSS or Less to fully customize Atom.
- * If you are unfamiliar with Less, you can read more about it here:
- * http://lesscss.org
- */
-
-
-/*
- * Examples
- * (To see them, uncomment and save)
- */
-
-// style the background color of the tree view
-.tree-view {
-  background-color: #494f54;
-  font-size: 1.2em;
-}
-
-// style the background and foreground colors on the atom-text-editor-element itself
-atom-text-editor {
-  // color: white;
-  // background-color: hsl(180, 24%, 12%);
-}
-
-// To style other content in the text editor's shadow DOM, use the ::shadow expression
-atom-text-editor::shadow .cursor {
-  // border-color: red;
-}
-.terminal-view .standard {
-    background-color: #3a3c40;
-    color: #eeeeee;
-}
-
-body {
-    font-size: 1.2em;
-}
-
-a {
-  color: #3fa3eb;
-}
-
-atom-pane-container atom-pane .item-views .pane-item {
-  background-color: #cad0d4;
-}
-
-.tab-bar {
-    background: #d2dae0;
-}
-.tab-bar .tab::after {
-    background-color: #f5fbff;
-}
-.tab-bar .tab[data-type="TextEditor"]::after {
-    background-color: #f5fbff;
-    border-bottom-color: #d45f2e;
-    border-bottom-width: 2px;
-}
-.tab-bar .tab:first-of-type::after {
-    background-color: #f5fbff;
-    border-bottom-color: #d45f2e;
-    border-bottom-width: 2px;
-}
-
-.settings-view .config-menu {
-    background: #ececec;
-}
-
-.settings-view .section {
-    background: #c3c7cb
-}
-.settings-view .icon::before {
-    color: #524d4d;
-}
-
-atom-pane-container atom-pane .item-views {
-    background-color: #cccccc;
-}
-linter-bottom-tab {
-    color:#626262;
-}
-linter-bottom-tab.active {
-    color: #d5e4d4;
-    background: #4495d7;
-}
-
-atom-panel {
-  color: #e4e4e4;
-}
-
-atom-panel.modal:before {
-    background-color: #d0d9d6;
-}
-atom-panel.modal .select-list ol.list-group li, atom-panel.modal.select-list ol.list-group li {
-    background-color:#b5bac4;
-    border-bottom: 1px solid #797979;
-    color: #525252;
-}
-
-atom-panel.top, atom-panel.bottom, atom-panel.left, atom-panel.right {
-    background-color: #d2dae0;
-}
-
-autocomplete-suggestion-list.select-list.popover-list .suggestion-description {
-    background-color:#d7e3e8;
-}
-
-autocomplete-suggestion-list.select-list.popover-list .suggestion-list-scroller {
-    background-color: #c5d5ce;
-}
-.tool-panel {
-    background-color: #494f54;
-}
-.git-control {
-    background: #d9dfe2;
-}
-.git-control .dialog {
-    background: #a6b1b5;
-}
-.git-control .sidebar .heading {
-    color: #656161;
-}
-.git-control .branches > .branch.active {
-    color: #666666;
-}
-.git-control .files .file .icon.check, .git-control .files .allfiles .icon.check {
-    color: #b4b4b4;
-    opacity: 0.8;
-}
-.git-control .files .file.active .icon.check, .git-control .files .allfiles.active .icon.check {
-    color: #1fa691;
-    opacity: 1.0;
-}
-.git-control .dialog .heading strong {
-    color: #5c5c5c;
-}
-.git-control .branches > .branch.active .icon.chevron-right {
-    color: #1bd777;
-}
-
-.symbols-context-menu .select-list.popover-list {
-    background: #787f81;
-}
-
-.status-bar {
-    color: #4d5351;
-}
+// /*
+//  * Your Stylesheet
+//  *
+//  * This stylesheet is loaded when Atom starts up and is reloaded automatically
+//  * when it is changed and saved.
+//  *
+//  * Add your own CSS or Less to fully customize Atom.
+//  * If you are unfamiliar with Less, you can read more about it here:
+//  * http://lesscss.org
+//  */
+//
+//
+// /*
+//  * Examples
+//  * (To see them, uncomment and save)
+//  */
+//
+// // style the background color of the tree view
+// .tree-view {
+//   background-color: #494f54;
+//   font-size: 1.2em;
+// }
+//
+// // style the background and foreground colors on the atom-text-editor-element itself
+// atom-text-editor {
+//   // color: white;
+//   // background-color: hsl(180, 24%, 12%);
+// }
+//
+// // To style other content in the text editor's shadow DOM, use the ::shadow expression
+// atom-text-editor::shadow .cursor {
+//   // border-color: red;
+// }
+// .terminal-view .standard {
+//     background-color: #3a3c40;
+//     color: #eeeeee;
+// }
+//
+// body {
+//     font-size: 1.2em;
+// }
+//
+// a {
+//   color: #3fa3eb;
+// }
+//
+// atom-pane-container atom-pane .item-views .pane-item {
+//   background-color: #cad0d4;
+// }
+//
+// .tab-bar {
+//     background: #d2dae0;
+// }
+// .tab-bar .tab::after {
+//     background-color: #f5fbff;
+// }
+// .tab-bar .tab[data-type="TextEditor"]::after {
+//     background-color: #f5fbff;
+//     border-bottom-color: #d45f2e;
+//     border-bottom-width: 2px;
+// }
+// .tab-bar .tab:first-of-type::after {
+//     background-color: #f5fbff;
+//     border-bottom-color: #d45f2e;
+//     border-bottom-width: 2px;
+// }
+//
+// .settings-view .config-menu {
+//     background: #ececec;
+// }
+//
+// .settings-view .section {
+//     background: #c3c7cb
+// }
+// .settings-view .icon::before {
+//     color: #524d4d;
+// }
+//
+// atom-pane-container atom-pane .item-views {
+//     background-color: #cccccc;
+// }
+// linter-bottom-tab {
+//     color:#626262;
+// }
+// linter-bottom-tab.active {
+//     color: #d5e4d4;
+//     background: #4495d7;
+// }
+//
+// atom-panel {
+//   color: #e4e4e4;
+// }
+//
+// atom-panel.modal:before {
+//     background-color: #d0d9d6;
+// }
+// atom-panel.modal .select-list ol.list-group li, atom-panel.modal.select-list ol.list-group li {
+//     background-color:#b5bac4;
+//     border-bottom: 1px solid #797979;
+//     color: #525252;
+// }
+//
+// atom-panel.top, atom-panel.bottom, atom-panel.left, atom-panel.right {
+//     background-color: #d2dae0;
+// }
+//
+// autocomplete-suggestion-list.select-list.popover-list .suggestion-description {
+//     background-color:#d7e3e8;
+// }
+//
+// autocomplete-suggestion-list.select-list.popover-list .suggestion-list-scroller {
+//     background-color: #c5d5ce;
+// }
+// .tool-panel {
+//     background-color: #494f54;
+// }
+// .git-control {
+//     background: #d9dfe2;
+// }
+// .git-control .dialog {
+//     background: #a6b1b5;
+// }
+// .git-control .sidebar .heading {
+//     color: #656161;
+// }
+// .git-control .branches > .branch.active {
+//     color: #666666;
+// }
+// .git-control .files .file .icon.check, .git-control .files .allfiles .icon.check {
+//     color: #b4b4b4;
+//     opacity: 0.8;
+// }
+// .git-control .files .file.active .icon.check, .git-control .files .allfiles.active .icon.check {
+//     color: #1fa691;
+//     opacity: 1.0;
+// }
+// .git-control .dialog .heading strong {
+//     color: #5c5c5c;
+// }
+// .git-control .branches > .branch.active .icon.chevron-right {
+//     color: #1bd777;
+// }
+//
+// .symbols-context-menu .select-list.popover-list {
+//     background: #787f81;
+// }
+//
+// .status-bar {
+//     color: #4d5351;
+// }
