@@ -160,7 +160,6 @@
   "switch-header-source":
     samePane: true
   "symbols-tree-view":
-    autoHide: true
     autoToggle: true
     zAutoHideTypes: "variable"
   "terminal-panel": {}
