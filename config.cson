@@ -39,8 +39,7 @@
   "atom-ternjs":
     useSnippets: true
   "atom-twitter-client": {}
-  "autocomplete-clang":
-    clangCommand: "clang++-3.7"
+  "autocomplete-clang": {}
   "autocomplete-plus":
     autoActivationDelay: 500
   "autocomplete-python":
@@ -52,6 +51,7 @@
   core:
     disabledPackages: [
       "atom-react-native-css"
+      "linter-gcc"
     ]
     followSymlinks: false
     packagesWithKeymapsDisabled: [
@@ -69,8 +69,8 @@
       "save-autorun"
     ]
     themes: [
-      "one-light-ui"
-      "gl-light-syntax"
+      "one-dark-ui"
+      "chester-atom-syntax"
     ]
   "dark-flat-ui":
     accentColor: "blue"
@@ -85,7 +85,7 @@
     per_section_indent: true
   editor:
     fontFamily: "Consolas"
-    fontSize: 21
+    fontSize: 23
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -118,6 +118,8 @@
   "linter-checkbashisms": {}
   "linter-clang":
     clangDefaultCppFlags: "-std=c++11"
+  "linter-cppcheck":
+    executable: "codelite_cppcheck"
   "linter-eslint":
     disableEslintIgnore: true
   "linter-flake8": {}
@@ -139,7 +141,7 @@
     fontSize: 18
     layoutMode: "Compact"
   "one-light-ui":
-    fontSize: 16
+    fontSize: 18
     layoutMode: "Compact"
   "paper-flat-ui": {}
   pigments:
@@ -162,12 +164,18 @@
   "symbols-tree-view":
     autoToggle: true
     zAutoHideTypes: "variable"
+  "sync-settings":
+    _analyticsUserId: "ac15e7e2-f3eb-426c-92fd-5fac99fec5fe"
+    _lastBackupHash: "a2c7307040fd8818ee77102e0549b0e8190717f8"
+    gistId: "876d50dff2ac2035675d"
+    personalAccessToken: "3e3f4c71cd726d54bf4495473accad9d20ff908b"
   "terminal-panel": {}
   "terminal-plus":
-    core: {}
+    core:
+      workingDirectory: "Active File"
     style:
-      fontFamily: "Monospace"
-      fontSize: "20"
+      fontFamily: "Consolas"
+      fontSize: "22"
     toggles:
       autoClose: true
   "tool-bar":
@@ -181,6 +189,8 @@
   "xml-formatter":
     endLineCharacter: "LF (\\n)"
     numberCharIndent: 4
+  "you-complete-me":
+    ycmdPath: "/usr/share/vim/vimfiles/third_party/ycmd"
 ".python.source":
   editor:
     autoIndentOnPaste: true

@@ -51,6 +51,14 @@
       <!-- endclass -->
       <!-- endclass -->
       '''
+    'Bootstrap alte':
+      'prefix': 'alert'
+      'body': '''
+      <!-- class="alert alert-${1:info}" -->
+      $2
+      <!-- endclass -->
+      '''
+
     'Bootstrap List':
       'prefix': 'list'
       'body': '''
