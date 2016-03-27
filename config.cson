@@ -69,8 +69,8 @@
       "save-autorun"
     ]
     themes: [
-      "one-dark-ui"
-      "chester-atom-syntax"
+      "one-light-ui"
+      "gl-light-syntax"
     ]
   "dark-flat-ui":
     accentColor: "blue"
@@ -85,7 +85,7 @@
     per_section_indent: true
   editor:
     fontFamily: "Consolas"
-    fontSize: 23
+    fontSize: 25
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -141,7 +141,7 @@
     fontSize: 18
     layoutMode: "Compact"
   "one-light-ui":
-    fontSize: 18
+    fontSize: 16
     layoutMode: "Compact"
   "paper-flat-ui": {}
   pigments:
