@@ -49,6 +49,7 @@
   "color-picker":
     preferredFormat: "HEX"
   core:
+    autoHideMenuBar: true
     disabledPackages: [
       "atom-react-native-css"
       "linter-gcc"
@@ -85,7 +86,7 @@
     per_section_indent: true
   editor:
     fontFamily: "Consolas"
-    fontSize: 25
+    fontSize: 24
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -191,6 +192,9 @@
     numberCharIndent: 4
   "you-complete-me":
     ycmdPath: "/usr/share/vim/vimfiles/third_party/ycmd"
+".ini.source":
+  editor:
+    tabLength: 4
 ".python.source":
   editor:
     autoIndentOnPaste: true
