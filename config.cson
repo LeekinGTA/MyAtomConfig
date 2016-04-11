@@ -27,6 +27,8 @@
     c_configPath: "/home/geequlim/.atom/uncrustify.cfg"
     cpp_configPath: "/home/geequlim/.atom/uncrustify.cfg"
     cs_configPath: "/home/geequlim/.atom/uncrustify.cfg"
+    general:
+      _analyticsUserId: "765ff56c-5c09-48b6-8989-d373c667180c"
   "atom-json-editor": {}
   "atom-material-ui":
     colors: {}
@@ -51,7 +53,6 @@
   core:
     autoHideMenuBar: true
     disabledPackages: [
-      "atom-react-native-css"
       "linter-gcc"
     ]
     followSymlinks: false
@@ -86,7 +87,7 @@
     per_section_indent: true
   editor:
     fontFamily: "Consolas"
-    fontSize: 24
+    fontSize: 25
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
