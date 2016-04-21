@@ -23,12 +23,14 @@
     react_native: true
     sass: true
   "atom-beautify":
-    _analyticsUserId: "eb357ca2-9e88-4bff-b807-ed6009c312ba"
-    c_configPath: "/home/geequlim/.atom/uncrustify.cfg"
-    cpp_configPath: "/home/geequlim/.atom/uncrustify.cfg"
-    cs_configPath: "/home/geequlim/.atom/uncrustify.cfg"
+    c:
+      configPath: "/home/geequlim/.atom/uncrustify.cfg"
+    cpp:
+      configPath: "/home/geequlim/.atom/uncrustify.cfg"
+    cs:
+      configPath: "/home/geequlim/.atom/uncrustify.cfg"
     general:
-      _analyticsUserId: "765ff56c-5c09-48b6-8989-d373c667180c"
+      _analyticsUserId: "eb357ca2-9e88-4bff-b807-ed6009c312ba"
   "atom-json-editor": {}
   "atom-material-ui":
     colors: {}
@@ -38,6 +40,7 @@
       compactList: true
     ui:
       panelContrast: true
+  "atom-react-native-css": {}
   "atom-ternjs":
     useSnippets: true
   "atom-twitter-client": {}
@@ -54,6 +57,7 @@
     autoHideMenuBar: true
     disabledPackages: [
       "linter-gcc"
+      "atom-react-native-css"
     ]
     followSymlinks: false
     packagesWithKeymapsDisabled: [
