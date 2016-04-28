@@ -45,6 +45,7 @@
     useSnippets: true
   "atom-twitter-client": {}
   "autocomplete-clang": {}
+  "autocomplete-gdscript": {}
   "autocomplete-plus":
     autoActivationDelay: 500
   "autocomplete-python":
@@ -75,8 +76,8 @@
       "save-autorun"
     ]
     themes: [
-      "one-light-ui"
-      "gl-light-syntax"
+      "one-dark-ui"
+      "chester-atom-syntax"
     ]
   "dark-flat-ui":
     accentColor: "blue"
@@ -116,6 +117,7 @@
   jsonlint:
     hideOnNoErrors: true
     validateOnChange: true
+  "lang-gdscript": {}
   "language-babel": {}
   linter:
     displayLinterInfo: true
@@ -165,6 +167,11 @@
     timeout: 50
   script:
     stopOnRerun: true
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
   "switch-header-source":
     samePane: true
   "symbols-tree-view":
