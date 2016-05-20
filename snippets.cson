@@ -97,13 +97,30 @@
   'New Post':
     'prefix': 'post'
     'body': '''
-    - title: ${1:Title}
+    - title: /assets/posts/${1:Title}
       publishAt: ${3:${4:2016}-${5:01}-${6:01} ${7:12}:${8:00}:${9:00}}
       file: ${10:posts/${11:filename}.md}
       categories:
         - $12
       tags:
         - $13
+    '''
+  'New Work':
+    'prefix': 'work'
+    'body': '''
+    - title: ${1:Title}
+      file: /assets/works/${2:file.md}
+      logo: /assets/images/works/${3:logo.png}
+      status: ${4:维护中}
+      time: ${5}
+      platforms:
+        - ${6}
+      categories:
+        - ${7}
+      frameworks:
+        - ${8}
+      cooperators:
+        - ${9}
     '''
 # --------------------------------------------- JS ------------------------------------------
 '.source.js':

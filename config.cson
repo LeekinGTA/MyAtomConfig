@@ -45,7 +45,8 @@
     useSnippets: true
   "atom-twitter-client": {}
   "autocomplete-clang": {}
-  "autocomplete-gdscript": {}
+  "autocomplete-gdscript":
+    lowerProvidersBehaviour: "Include All"
   "autocomplete-plus":
     autoActivationDelay: 500
   "autocomplete-python":
@@ -55,10 +56,13 @@
   "color-picker":
     preferredFormat: "HEX"
   core:
+    allowPendingPaneItems: false
     autoHideMenuBar: true
     disabledPackages: [
       "linter-gcc"
       "atom-react-native-css"
+      "autocomplete-gdscript"
+      "glsl-preview"
     ]
     followSymlinks: false
     packagesWithKeymapsDisabled: [
@@ -92,7 +96,7 @@
     per_section_indent: true
   editor:
     fontFamily: "Consolas"
-    fontSize: 25
+    fontSize: 24
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -122,6 +126,7 @@
   linter:
     displayLinterInfo: true
     errorPanelHeight: 84
+    showErrorPanel: false
     showErrorTabLine: true
   "linter-checkbashisms": {}
   "linter-clang":
@@ -172,6 +177,7 @@
     ignoreWhitespace: true
     leftEditorColor: "red"
     rightEditorColor: "green"
+    syncHorizontalScroll: true
   "switch-header-source":
     samePane: true
   "symbols-tree-view":
