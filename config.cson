@@ -11,10 +11,15 @@
       green: 97
       red: 36
   "api-docs":
+    _theme: "Dark"
     c: true
+    "cmake~3":
+      "5": true
     cpp: true
+    git: true
     html: false
     http: false
+    jquery: true
     less: true
     node: true
     npm: true
@@ -61,8 +66,8 @@
     disabledPackages: [
       "linter-gcc"
       "atom-react-native-css"
-      "autocomplete-gdscript"
       "glsl-preview"
+      "autocomplete-gdscript"
     ]
     followSymlinks: false
     packagesWithKeymapsDisabled: [
@@ -96,7 +101,7 @@
     per_section_indent: true
   editor:
     fontFamily: "Consolas"
-    fontSize: 24
+    fontSize: 22
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
