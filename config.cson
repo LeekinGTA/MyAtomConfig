@@ -57,6 +57,7 @@
   "autocomplete-python":
     useSnippets: "required"
   "browser-plus": {}
+  "build-ninja": {}
   "build-tools": {}
   "color-picker":
     preferredFormat: "HEX"
@@ -85,8 +86,8 @@
       "save-autorun"
     ]
     themes: [
-      "one-dark-ui"
-      "chester-atom-syntax"
+      "daylight-ui"
+      "gl-light-syntax"
     ]
   "dark-flat-ui":
     accentColor: "blue"
@@ -101,7 +102,7 @@
     per_section_indent: true
   editor:
     fontFamily: "Consolas"
-    fontSize: 22
+    fontSize: 23
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -131,7 +132,6 @@
   linter:
     displayLinterInfo: true
     errorPanelHeight: 84
-    showErrorPanel: false
     showErrorTabLine: true
   "linter-checkbashisms": {}
   "linter-clang":
