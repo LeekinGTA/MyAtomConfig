@@ -28,6 +28,36 @@
           virtual ~${1:name_t} ();
       };
       '''
+    'Implement uuii Widget':
+      'prefix': 'uiwi'
+      'body': '''
+      namespace uuii {
+          using BackendType = ${2:NativeType};
+
+          ${1:WidgetType}::${1:WidgetType}():super() {
+              super::set_backend_ptr(new BackendType);
+              bind_signals();
+          }
+
+          ${1:WidgetType}::~${1:WidgetType}() {
+              set_backend_ptr(nullptr);
+          }
+
+          void ${1:WidgetType}::set_backend_ptr(void* new_ptr) {
+              if(m_backend_ptr != new_ptr) {
+                  if(m_backend_ptr)
+                      delete static_cast<BackendType*>(m_backend_ptr);
+                  if(new_ptr)
+                      m_signals_initialized = false;
+                  m_backend_ptr = new_ptr;
+              }
+          }
+
+          void ${1:WidgetType}::bind_signals() {
+              super::bind_signals();
+          }
+      }
+      '''
 # ------------------------------------ Markdown ------------------------------------------
 '.source.gfm':
     'Styled block':

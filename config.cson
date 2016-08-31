@@ -102,7 +102,7 @@
     per_section_indent: true
   editor:
     fontFamily: "Consolas"
-    fontSize: 23
+    fontSize: 22
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
